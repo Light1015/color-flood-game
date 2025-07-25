@@ -13,8 +13,9 @@ export default function HomePage() {
 
   return (
     <main className="relative min-h-screen flex flex-col bg-gray-100 p-2 cursor-none">
-      {/* Custom cursor */}
-      <CustomCursor color={state.selectedColor ?? undefined} variant="default" />
+      {/* Custom cursor */}<CustomCursor color={state.selectedColor ?? undefined} />
+      <CustomCursor color={state.selectedColor ?? undefined} />
+
 
       {/* Header top-left */}
       <div className="flex flex-col justify-start items-start w-full max-w-6xl mx-10 mb-0">
