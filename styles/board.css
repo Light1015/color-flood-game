@@ -1,0 +1,6 @@
+.cell {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.cell.flooded {
+  transform: scale(1.05);
+}
