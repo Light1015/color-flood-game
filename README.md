@@ -34,4 +34,30 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-"# color-flood-game" 
+"# color-flood-game"
+
+color-flood-game/
+├── app/                             # App Router (Next.js 13+)
+│   ├── page.tsx                     # Trang chính, chứa <Game />
+│   └── globals.css                  # Tailwind & base styles
+├── components/                      # Component giao diện
+│   ├── GameBoard.tsx                # Vẽ bảng trò chơi
+│   ├── ColorPicker.tsx              # Nút chọn màu
+│   ├── MoveCounter.tsx              # Hiển thị lượt còn lại
+│   ├── GameOverModal.tsx           # Popup Win/Lose
+├── lib/                             # Logic cốt lõi không phụ thuộc UI
+│   ├── createBoard.ts               # Tạo board ngẫu nhiên
+│   ├── floodFill.ts                 # Thuật toán flood fill
+│   └── checkWin.ts                  # Kiểm tra win
+├── hooks/                           # Custom React hooks
+│   └── useGameReducer.ts            # Quản lý state toàn game
+├── types/                           # Kiểu dữ liệu dùng chung
+│   └── game.ts                      # Cell, Board, Color, GameState...
+├── public/                          # Ảnh, favicon nếu cần
+├── styles/                          # Style phụ nếu có thêm ngoài Tailwind
+│   └── board.css                    # Optional: animation, transition
+├── README.md                        # Hướng dẫn dự án
+├── tailwind.config.js
+├── postcss.config.js
+├── tsconfig.json
+└── package.json
