@@ -1,6 +1,11 @@
+/* Áp dụng cho tất cả các phần tử có class "cell" */
 .cell {
+  /* Tạo hiệu ứng chuyển động mượt mà khi thay đổi màu nền hoặc transform */
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
+
+/* Áp dụng khi ô được thêm class "flooded" */
 .cell.flooded {
+  /* Phóng to ô lên 5% để tạo hiệu ứng nổi bật */
   transform: scale(1.05);
 }

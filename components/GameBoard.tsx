@@ -8,13 +8,13 @@ export default function GameBoard({
   onPaint: (x: number, y: number) => void;
 }) {
   return (
-    <div className="grid grid-cols-8 gap-0.5">
+    <div className="grid grid-cols-10 gap-1">
       {board.map((row, i) =>
         row.map((cell, j) => (
           <div
             key={`${i}-${j}`}
             onClick={() => onPaint(i, j)}
-            className="w-8 h-8 cursor-pointer border border-gray-300"
+            className="w-[66px] h-[66px] cursor-none border border-gray-300 rounded-md transition-all duration-100"
             style={{ backgroundColor: cell.color }}
           />
         ))
